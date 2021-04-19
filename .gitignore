@@ -4,6 +4,10 @@
 # ignore the lock file
 .terraform.lock.hcl
 
+# out files
+*plan*out
+*apply*out
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
