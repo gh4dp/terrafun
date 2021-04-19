@@ -11,5 +11,6 @@
    The output is captured/showed in the "output.tf" script.
 */
 
+// touched
 resource "random_pet" "uniqueName" { }
 
