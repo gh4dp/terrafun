@@ -28,6 +28,9 @@ resource "aws_instance" "web" {
   ami                    = "ami-0742b4e673072066f"
   instance_type          = "t2.micro"
   user_data              = file("init-script.sh")
+  vpc_security_group_ids = [aws_security_group.allow-web.id]
+  key_name = "msimpg"
+
 
   tags = {
     Name = random_pet.uniqueName.id
